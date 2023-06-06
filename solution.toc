@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{第一章}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{第一节}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{第二节}{7}{0}{1}
+\beamer@sectionintoc {2}{第二章}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{第一节}{10}{0}{2}
+\beamer@subsectionintoc {2}{2}{第二节}{11}{0}{2}

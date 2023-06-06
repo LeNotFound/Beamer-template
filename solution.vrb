@@ -1,0 +1,10 @@
+\frametitle{页面标题}
+    % 代码块，可标记语言高亮
+    \begin{lstlisting}[language=C++]
+        string str;
+        while(cin>>str)
+        {
+            // do something...
+        }
+    \end{lstlisting}
+

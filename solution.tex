@@ -1,0 +1,115 @@
+\documentclass[aspectratio=169]{beamer} % 设置纵横比 16:9
+% \documentclass[table]{beamer}
+\usepackage[UTF8, noindent]{ctexcap}
+\usepackage{graphicx, graphics}
+\usepackage{float, array, color, ctex}
+\usepackage{amsmath, amssymb}
+\usepackage{multicol, multirow, makecell, tabu, dcolumn}
+\usepackage{fancyhdr, lastpage}
+\usepackage{listings, xcolor}
+\usepackage{xeCJKfntef}
+\usepackage{fontspec, xunicode, xltxtra}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{hyperref}
+\usetheme{Szeged}   % 使用主题
+\usecolortheme{default} % 使用配色方案
+\usefonttheme[onlymath]{serif}  % 使用字体主题
+\setsansfont{Consolas}  % 设置正文字体
+\setbeamertemplate{background}{\includegraphics[height=\paperheight]{bg}} % 设置背景图片
+
+\title{标题}    % 标题
+\author{LeNotFonud} % 作者
+\institute{LeNotFound OI Team}  % 组织
+\date{2023-02-20}   % 日期
+\AtBeginSection[]{
+  \begin{frame}
+    \frametitle{目录}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\begin{document}
+
+\frame{\titlepage} % 生成标题页
+
+\section{第一章} % 一级章节标题
+
+\subsection{第一节} % 二级章节标题
+
+\begin{frame} % 插入空白页
+
+    \frametitle{页面标题} % 一页的标题
+
+    给定一个 01 串，问能否在 $K$ 次操作内统一为 $0$ 或 $1$。\\
+    ~\
+    \pause
+
+    为什么说到 01 串呢，原题不是 $top$ 和 $bottom$ 吗？
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{页面标题}
+
+    这就引入一个新的概念：\\
+    ~\
+    \begin{center}  % 居中
+        \textbf{状态压缩}   % 粗体
+    \end{center}
+
+    ~\  % 空行
+
+    \pause  % 暂停
+
+    实际上状态压缩常用于状压 DP，用二进制上的每一个数对应集合的一种状态，节省空间，同时可以通过位运算提高效率。
+
+\end{frame}
+
+\subsection{第二节} % 二级章节标题
+
+\begin{frame}[fragile] % 包含代码块的页面
+    \frametitle{页面标题}
+
+    以流的方式输入输出，本题主要使用 \verb|istringstream|。\\
+    
+    ~\
+
+    \verb|xxxxx| % 行内代码，等同于 markdown `xxxxx`
+
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{页面标题}
+    % 代码块，可标记语言高亮
+    \begin{lstlisting}[language=C++]
+        string str;
+        while(cin>>str)
+        {
+            // do something...
+        }
+    \end{lstlisting}
+
+\end{frame}
+
+\section{第二章}
+
+\subsection{第一节}
+
+\begin{frame}
+    \frametitle{页面标题}
+
+    \includegraphics[height=4cm]{pic.jpg} % 插入图片
+
+    % 图片可调整宽高
+
+\end{frame}
+
+\subsection{第二节}
+
+\begin{frame}
+    \frametitle{页面标题}
+\end{frame}
+
+\end{document}
